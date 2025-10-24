@@ -1,0 +1,103 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    display: flex;
+    justify-content: center;
+    padding-top: 50px;
+}
+
+.container {
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 450px; /* Slightly wider for the extra buttons */
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+}
+
+.input-area {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+#taskInput {
+    flex-grow: 1;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px 0 0 4px;
+}
+
+#addButton {
+    padding: 10px 15px;
+    background-color: #5cb85c;
+    color: white;
+    border: none;
+    border-radius: 0 4px 4px 0;
+    cursor: pointer;
+}
+
+#addButton:hover {
+    background-color: #4cae4c;
+}
+
+#todoList {
+    list-style: none;
+    padding: 0;
+}
+
+#todoList li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    margin-bottom: 8px;
+    border-radius: 4px;
+    background: #eef;
+    transition: background 0.3s;
+}
+
+#todoList li.completed .task-text {
+    text-decoration: line-through;
+    color: #888;
+}
+
+#todoList li.completed {
+    background: #ddd;
+}
+
+/* Style for the task text and input */
+.task-text {
+    flex-grow: 1;
+    padding: 0 10px;
+    cursor: pointer; /* Indicates it's clickable to complete */
+}
+
+.task-edit-input {
+    flex-grow: 1;
+    padding: 5px;
+    border: 1px solid #007bff;
+    margin-right: 10px;
+}
+
+/* Style for action buttons */
+.actions button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 1em;
+    margin-left: 5px;
+    padding: 5px;
+}
+
+.edit-btn {
+    color: #007bff;
+}
+
+.delete-btn {
+    color: red;
+}
